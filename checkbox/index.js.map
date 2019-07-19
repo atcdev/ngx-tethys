@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../.tmp/checkbox/index.ts"],"names":[],"mappings":"AAAA,cAAc,UAAU,CAAC;AACzB,cAAc,sBAAsB,CAAC;AACrC,8CAA8C","sourcesContent":["export * from './module';\nexport * from './checkbox.component';\n// export * from './checkbox-group.component';\n"]}

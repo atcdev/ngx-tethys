@@ -1,0 +1,1 @@
+{"version":3,"file":"empty.config.ngfactory.js","sourceRoot":"","sources":["../../.tmp/empty/empty.config.ngfactory.ts"],"names":[],"mappings":"","sourcesContent":["import * as i0 from '@angular/core';\ni0.ComponentFactory;\n"]}

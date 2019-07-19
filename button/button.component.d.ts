@@ -1,0 +1,31 @@
+import { ElementRef, Renderer2 } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { UpdateHostClassService } from '../shared';
+export declare type ThyButtonType = 'primary' | 'secondary' | 'outline-primary' | 'outline-default' | 'danger' | 'link' | 'link-secondary';
+export declare class ThyButtonComponent implements OnInit {
+    private elementRef;
+    private renderer;
+    private updateHostClassService;
+    private _nativeElement;
+    private _initialized;
+    private _originalText;
+    private _type;
+    private _size;
+    private _icon;
+    private _loading;
+    private _loadingText;
+    _isRadiusSquare: boolean;
+    _iconClass: string[];
+    _setBtnType(value: ThyButtonType): void;
+    thyButton: ThyButtonType;
+    thyType: ThyButtonType;
+    thyLoading: boolean;
+    thyLoadingText: string;
+    thySize: string;
+    thyIcon: string;
+    thySquare: boolean;
+    private _setLoadingStatus;
+    private _setClasses;
+    constructor(elementRef: ElementRef, renderer: Renderer2, updateHostClassService: UpdateHostClassService);
+    ngOnInit(): void;
+}

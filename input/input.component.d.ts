@@ -1,0 +1,38 @@
+import { TemplateRef, EventEmitter, AfterViewInit, Renderer2 } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
+export declare class ThyInputComponent implements ControlValueAccessor, AfterViewInit {
+    private renderer;
+    placeholder: string;
+    thySize: string;
+    thyAutofocus: boolean;
+    type: string;
+    thyType: string;
+    thyLabelText: string;
+    readonly: boolean;
+    focus: EventEmitter<Event>;
+    blur: EventEmitter<Event>;
+    appendTemplate: TemplateRef<any>;
+    prependTemplate: TemplateRef<any>;
+    eyeTemplate: TemplateRef<any>;
+    _type: string;
+    value: string;
+    disabled: boolean;
+    showLabel: boolean;
+    private onTouchedCallback;
+    private onChangeCallback;
+    _isSearchContainer: boolean;
+    _isFormControl: boolean;
+    _isFocus: boolean;
+    constructor(renderer: Renderer2);
+    ngAfterViewInit(): void;
+    writeValue(value: any): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    setDisabledState?(isDisabled: boolean): void;
+    onModelChange(): void;
+    onInputFocus(event: Event): void;
+    onInputBlur(event: Event): void;
+    isPassword(value: string): boolean;
+    togglePasswordType(): void;
+}

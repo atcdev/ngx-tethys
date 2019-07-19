@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../.tmp/core/event-dispatchers/index.ts"],"names":[],"mappings":"AAAA,cAAc,oBAAoB,CAAC;AACnC,cAAc,uBAAuB,CAAC","sourcesContent":["export * from './click-dispatcher';\nexport * from './keyboard-dispatcher';\n"]}

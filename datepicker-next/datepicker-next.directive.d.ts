@@ -1,0 +1,31 @@
+import { OnInit, ElementRef, Renderer2, ViewContainerRef, AfterContentInit } from '@angular/core';
+import { ComponentLoaderFactory } from 'ngx-bootstrap/component-loader';
+import { DatePipe } from '@angular/common';
+import { ControlValueAccessor } from '@angular/forms';
+import { ThyPositioningService, PlacementTypes } from '../positioning/positioning.service';
+import { DatepickerNextValueInfo } from './datepicker-next.interface';
+export declare class ThyDatepickerNextDirective implements OnInit, AfterContentInit, ControlValueAccessor {
+    private elementRef;
+    private renderer;
+    private thyPositioningService;
+    dataPipe: DatePipe;
+    private _format;
+    private _onChange;
+    private _onTouched;
+    thyPlacement: PlacementTypes;
+    thyAutoAdapt: boolean;
+    thyTriggers: string;
+    thyContainer: string;
+    thyOutsideClick: boolean;
+    thyDisabled: boolean;
+    thyShowTime: boolean;
+    thyFormat: string;
+    constructor(elementRef: ElementRef, renderer: Renderer2, _viewContainerRef: ViewContainerRef, cis: ComponentLoaderFactory, thyPositioningService: ThyPositioningService);
+    ngOnInit(): void;
+    ngAfterContentInit(): void;
+    writeValue(value: DatepickerNextValueInfo | Date | number): void;
+    registerOnChange(fn: (value: any) => any): void;
+    registerOnTouched(fn: () => any): void;
+    show(): void;
+    hide(): void;
+}

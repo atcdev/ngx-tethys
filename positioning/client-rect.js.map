@@ -1,0 +1,1 @@
+{"version":3,"file":"client-rect.js","sourceRoot":"","sources":["../../.tmp/positioning/client-rect.ts"],"names":[],"mappings":"","sourcesContent":["export interface NewClientRect extends ClientRect {\n\n    originBottom?: number;\n\n    originLeft?: number;\n\n    originRight?: number;\n\n    originTop?: number;\n\n}\n"]}

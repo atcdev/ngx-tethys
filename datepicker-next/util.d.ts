@@ -1,0 +1,10 @@
+import { ThyDatepickerNextCalendarDate, DatepickerValueTypeEnum, DatepickerNextValueType, ValueInRxPipeInterface, ValueOutRxPipeInterface } from './datepicker-next.interface';
+export declare function getCountMonthDays(date: Date): number;
+export declare function sliceArray(array: any, size: number): any[];
+export declare function calendarDateConvert(year: number, month: number, day?: number): ThyDatepickerNextCalendarDate;
+export declare function getFullTimeText(value: number): string;
+export declare function exploreValueTypePipe(value: DatepickerNextValueType): ValueInRxPipeInterface;
+export declare function exploreValueType(value: DatepickerNextValueType): DatepickerValueTypeEnum;
+export declare function combiningDataAccordingToDatepickerType(data: ValueInRxPipeInterface): ValueInRxPipeInterface;
+export declare function combiningDataAccordingToOriginalDataType(data: ValueOutRxPipeInterface): DatepickerNextValueType;
+export declare function getTimestamp(date: Date): number;

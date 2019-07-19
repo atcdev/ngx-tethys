@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{},"exports":[{"from":"./module"},{"from":"./option.component"},{"from":"./option-group.component"},{"from":"./select-custom.component","export":["ThySelectCustomComponent"]},{"from":"./select.component","export":["ThySelectComponent"]}]}]

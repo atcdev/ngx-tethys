@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{"DecoratorActionOptions":{"__symbolic":"interface"},"Action":{"__symbolic":"function","parameters":["action"],"value":{"__symbolic":"error","message":"Lambda not supported","line":15,"character":11}}}}]

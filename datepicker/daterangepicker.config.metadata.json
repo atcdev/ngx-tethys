@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{"ThyDaterangepickerConfig":{"__symbolic":"class","extends":{"__symbolic":"reference","module":"./datepicker.config","name":"ThyDatepickerConfig","line":9,"character":46},"decorators":[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/core","name":"Injectable","line":8,"character":1}}]}}}]

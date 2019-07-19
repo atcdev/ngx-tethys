@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../.tmp/switch/index.ts"],"names":[],"mappings":"AAAA,cAAc,iBAAiB,CAAC;AAChC,cAAc,oBAAoB,CAAC","sourcesContent":["export * from './switch.module';\nexport * from './switch.component';\n"]}

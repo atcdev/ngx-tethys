@@ -1,0 +1,34 @@
+import { OnInit, OnDestroy, AfterContentInit, EventEmitter } from '@angular/core';
+import { ThyDatepickerNextStore } from './datepicker-next.store';
+import { ThyDatepickerNextEventsEnum, DatepickerNextValueType, DatepickerNextTimeModeType } from './datepicker-next.interface';
+import { ControlValueAccessor } from '@angular/forms';
+export declare class ThyDatepickerNextContainerComponent implements OnInit, OnDestroy, AfterContentInit, ControlValueAccessor {
+    store: ThyDatepickerNextStore;
+    loadingDone: boolean;
+    styleClass: boolean;
+    thyNgModel: DatepickerNextValueType;
+    thyShortcut: boolean;
+    thyWithTime: boolean;
+    thyOperation: boolean;
+    thyTimeType: DatepickerNextTimeModeType;
+    thyMaxDate: Date | number;
+    thyMinDate: Date | number;
+    thyModeType: DatepickerNextTimeModeType;
+    thyNgModelChange: EventEmitter<DatepickerNextValueType>;
+    private _isAfterContentInit;
+    private _onChange;
+    private _onTouched;
+    private _originValueType;
+    private _originValue;
+    constructor(store: ThyDatepickerNextStore);
+    ngOnInit(): void;
+    ngAfterContentInit(): void;
+    private _initViewFeature;
+    writeValue(value: any): void;
+    registerOnChange(fn: (value: any) => any): void;
+    registerOnTouched(fn: () => any): void;
+    private _initViewComponent;
+    behaviorValueChange(event?: ThyDatepickerNextEventsEnum): void;
+    private _getCalendarSelected;
+    ngOnDestroy(): void;
+}

@@ -1,0 +1,31 @@
+import { ElementRef, Renderer2 } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { UpdateHostClassService } from '../shared';
+export declare type IconShape = '' | 'dashed' | 'solid';
+export declare class ThyButtonIconComponent implements OnInit {
+    private elementRef;
+    private renderer;
+    private updateHostClassService;
+    private _initialized;
+    private _shape;
+    private _size;
+    _iconPrefix: string;
+    _iconClasses: string[];
+    _icon: string;
+    _theme: string;
+    _isBtn: boolean;
+    _isBtnIcon: boolean;
+    _isLighted: boolean;
+    _isActive: boolean;
+    _setIconClass(icon: string): void;
+    thySize: string;
+    thyIcon: string;
+    thyButtonIcon: string;
+    thyShape: IconShape;
+    thyLight: boolean;
+    thyActive: boolean;
+    thyTheme: string;
+    private _setClasses;
+    constructor(elementRef: ElementRef, renderer: Renderer2, updateHostClassService: UpdateHostClassService);
+    ngOnInit(): void;
+}

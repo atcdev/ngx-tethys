@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../.tmp/transfer/index.ts"],"names":[],"mappings":"AACA,cAAc,sBAAsB,CAAC;AACrC,cAAc,mBAAmB,CAAC;AAClC,cAAc,2BAA2B,CAAC","sourcesContent":["export * from './transfer.interface';\nexport * from './transfer.component';\nexport * from './transfer.module';\nexport * from './transfer-list.component';\n"]}

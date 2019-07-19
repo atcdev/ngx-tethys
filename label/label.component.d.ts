@@ -1,0 +1,34 @@
+import { ElementRef, Renderer2, EventEmitter } from '@angular/core';
+export declare type ThyLabelType = 'default' | 'primary' | 'success' | 'info' | 'warning' | 'danger';
+export declare class ThyLabelComponent {
+    private el;
+    private renderer;
+    _thyHasHover: boolean;
+    _classNameSM: boolean;
+    _classNameDM: boolean;
+    _classNameLG: boolean;
+    thySize: string;
+    private nativeElement;
+    private _typeClassNames;
+    private _labelClass?;
+    private _type?;
+    private _labelType?;
+    private _icon;
+    beforeIconClass: any;
+    afterIconClass: any;
+    _color?: string;
+    thyOnRemove: EventEmitter<any>;
+    constructor(el: ElementRef, renderer: Renderer2);
+    thyHasHover: string;
+    thyLabel: ThyLabelType;
+    thyLabelColor: string;
+    thyLabelType: string;
+    thyIconPrefix: string;
+    thyBeforeIcon: string;
+    thyAfterIcon: string;
+    private _setClassesByType;
+    private _setLabelCustomColor;
+    private _addClass;
+    private _removeClass;
+    remove(): void;
+}

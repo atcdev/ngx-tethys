@@ -1,0 +1,32 @@
+import { ElementRef, OnInit, ChangeDetectorRef } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import { ThyRadioComponent } from '../radio.component';
+import { ThyRadioButtonComponent } from '../button/radio-button.component';
+import { UpdateHostClassService } from '../../shared';
+export declare class ThyRadioGroupComponent implements ControlValueAccessor, OnInit {
+    private updateHostClassService;
+    private elementRef;
+    private changeDetectorRef;
+    thyRadioGroup: boolean;
+    isButtonGroup: boolean;
+    isButtonGroupOutline: boolean;
+    private _size;
+    private _layout;
+    thySize: string;
+    thyLayout: string;
+    _innerValue: string | number;
+    radios: Array<ThyRadioComponent | ThyRadioButtonComponent>;
+    thyDisabled: boolean;
+    onChange: (_: string) => void;
+    onTouched: () => void;
+    constructor(updateHostClassService: UpdateHostClassService, elementRef: ElementRef, changeDetectorRef: ChangeDetectorRef);
+    addRadio(radio: ThyRadioComponent | ThyRadioButtonComponent): void;
+    updateValue(value: string, emit: boolean): void;
+    writeValue(value: any): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    setDisabledState?(isDisabled: boolean): void;
+    setGroup(): void;
+    ngOnInit(): void;
+    private _setClasses;
+}

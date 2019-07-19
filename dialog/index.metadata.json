@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{},"exports":[{"from":"./dialog.module"},{"from":"./dialog.service"},{"from":"./dialog.config","export":["ThyDialogConfig","ThyDialogSizes","ThyDialogRole","THY_DIALOG_DEFAULT_OPTIONS"]},{"from":"./dialog-ref","export":["ThyDialogRef"]},{"from":"./confirm.config","export":["ThyConfirmConfig"]}]}]

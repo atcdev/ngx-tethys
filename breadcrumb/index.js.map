@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../.tmp/breadcrumb/index.ts"],"names":[],"mappings":"AAAA,cAAc,UAAU,CAAC;AACzB,cAAc,wBAAwB,CAAC;AACvC,cAAc,6BAA6B,CAAC","sourcesContent":["export * from './module';\nexport * from './breadcrumb.component';\nexport * from './breadcrumb-item.component';\n"]}

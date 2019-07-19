@@ -1,0 +1,1 @@
+{"version":3,"file":"select.pipe.ngfactory.js","sourceRoot":"","sources":["../../.tmp/select/select.pipe.ngfactory.ts"],"names":[],"mappings":"","sourcesContent":["import * as i0 from '@angular/core';\ni0.ComponentFactory;\n"]}

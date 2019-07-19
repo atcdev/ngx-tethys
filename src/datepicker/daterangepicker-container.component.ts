@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer2, ViewContainerRef, ComponentRef } from '@angular/core';
 import { ThyDaterangepickerConfig } from './daterangepicker.config';
-import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
+import { BsDatepickerConfig, BsLocaleService } from 'ngx-bootstrap/datepicker';
 import { skip } from 'rxjs/operators';
+import { defineLocale } from 'ngx-bootstrap/chronos';
+import { deLocale } from 'ngx-bootstrap/locale';
 
 @Component({
     selector: 'thy-daterangepicker-container',
@@ -23,11 +25,13 @@ export class ThyDaterangepickerContainerComponent implements OnInit {
         public _bsConfig: BsDatepickerConfig,
         _elementRef: ElementRef,
         _renderer: Renderer2,
-        _viewContainerRef: ViewContainerRef
+        _viewContainerRef: ViewContainerRef,
+        private localeService: BsLocaleService
     ) {
         _bsConfig.containerClass = 'theme-ngx';
         _bsConfig.showWeekNumbers = false;
         _bsConfig.displayMonths = 2;
+        this.localeService.use('en');
     }
 
     // 开始时间默认0:0 结束时间默认23:59，所以屏蔽掉了时间相关

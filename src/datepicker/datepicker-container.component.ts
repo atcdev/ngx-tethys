@@ -1,5 +1,14 @@
-import { Component, OnInit, ViewChild, ElementRef, Renderer2, ViewContainerRef, ComponentRef, HostBinding } from '@angular/core';
-import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
+import {
+    Component,
+    OnInit,
+    ViewChild,
+    ElementRef,
+    Renderer2,
+    ViewContainerRef,
+    ComponentRef,
+    HostBinding
+} from '@angular/core';
+import { BsDatepickerConfig, BsLocaleService } from 'ngx-bootstrap/datepicker';
 import { DatepickerValueEntry } from './i.datepicker';
 import { skip } from 'rxjs/operators';
 
@@ -21,9 +30,16 @@ export class ThyDatepickerContainerComponent implements OnInit {
     @ViewChild('dpContainer')
     private _dpContainerRef: any;
 
-    constructor(private _config: BsDatepickerConfig, _elementRef: ElementRef, _renderer: Renderer2, _viewContainerRef: ViewContainerRef) {
+    constructor(
+        private _config: BsDatepickerConfig,
+        _elementRef: ElementRef,
+        _renderer: Renderer2,
+        _viewContainerRef: ViewContainerRef,
+        private localeService: BsLocaleService
+    ) {
         this._config.containerClass = 'theme-ngx';
         this._config.showWeekNumbers = false;
+        this.localeService.use('en');
     }
 
     ngOnInit() {

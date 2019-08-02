@@ -19,9 +19,9 @@ export const THY_CONFIRM_DEFAULT_OPTIONS = new InjectionToken<ThyConfirmConfig>(
 export const THY_CONFIRM_DEFAULT_OPTIONS_PROVIDER = {
     provide: THY_CONFIRM_DEFAULT_OPTIONS,
     useValue: {
-        title: '确认删除',
-        okText: '确认',
+        title: 'Confirm',
+        okText: 'Ok',
         okType: 'danger',
-        cancelText: '取消'
+        cancelText: 'Cancel'
     }
 };

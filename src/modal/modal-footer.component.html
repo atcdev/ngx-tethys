@@ -2,7 +2,7 @@
     <ng-container *ngIf="!isTemplateRef">
         <div class="btn-pair">
             <button thyButton="primary" (click)="saveFn()" [thyLoading]="savingStatus" [thyLoadingText]="savingText">{{thySaveText ? thySaveText : '确认'}}</button>
-            <button thyButton="link-secondary" (click)="cancelFn()">取消</button>
+            <button thyButton="link-secondary" (click)="cancelFn()">Cancel</button>
         </div>
     </ng-container>
     <ng-container *ngIf="isTemplateRef">

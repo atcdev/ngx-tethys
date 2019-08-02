@@ -38,7 +38,7 @@ export class DialogSimpleContentComponent {
         </thy-dialog-body>
         <thy-dialog-footer thyShowBorderTop="true">
             <button thyButton="primary" (click)="ok()">确认</button>
-            <button thyButton="link-secondary" (click)="close()">取消</button>
+            <button thyButton="link-secondary" (click)="close()">Cancel</button>
         </thy-dialog-footer>
     `
 })

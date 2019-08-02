@@ -51,7 +51,7 @@ var ThyConfirmComponent = /** @class */ (function () {
     };
     ThyConfirmComponent = __decorate([
         Component({
-            template: "<thy-modal> <thy-modal-header thyTitle=\"{{title}}\"></thy-modal-header> <thy-modal-body class=\"thy-form\"> <div class=\"form-group\"> <p [innerHtml]=\"content\"></p> </div> <div class=\"form-group\"> <div class=\"btn-pair\"> <button thyButton=\"{{buttons.confirm.type}}\" (click)=\"confirm()\" [thyLoading]=\"loading\" [thyLoadingText]=\"buttons.confirm.loadingText\">{{buttons.confirm.text}}</button> <button thyButton=\"link-secondary\" (click)=\"closeModal()\">取消</button> </div> </div> </thy-modal-body> </thy-modal>"
+            template: "<thy-modal> <thy-modal-header thyTitle=\"{{title}}\"></thy-modal-header> <thy-modal-body class=\"thy-form\"> <div class=\"form-group\"> <p [innerHtml]=\"content\"></p> </div> <div class=\"form-group\"> <div class=\"btn-pair\"> <button thyButton=\"{{buttons.confirm.type}}\" (click)=\"confirm()\" [thyLoading]=\"loading\" [thyLoadingText]=\"buttons.confirm.loadingText\">{{buttons.confirm.text}}</button> <button thyButton=\"link-secondary\" (click)=\"closeModal()\">Cancel</button> </div> </div> </thy-modal-body> </thy-modal>"
         }),
         __metadata("design:paramtypes", [ThyModalService])
     ], ThyConfirmComponent);

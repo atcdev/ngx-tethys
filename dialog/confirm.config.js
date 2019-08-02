@@ -6,7 +6,7 @@ export var THY_CONFIRM_DEFAULT_OPTIONS_PROVIDER = {
         title: '确认删除',
         okText: '确认',
         okType: 'danger',
-        cancelText: '取消'
+        cancelText: 'Cancel'
     }
 };
 //# sourceMappingURL=confirm.config.js.map

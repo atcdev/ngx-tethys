@@ -69,7 +69,7 @@ var ModalFooterComponent = /** @class */ (function () {
     ModalFooterComponent = __decorate([
         Component({
             selector: 'thy-modal-footer',
-            template: "<div class=\"modal-footer\"> <ng-container *ngIf=\"!isTemplateRef\"> <div class=\"btn-pair\"> <button thyButton=\"primary\" (click)=\"saveFn()\" [thyLoading]=\"savingStatus\" [thyLoadingText]=\"savingText\">{{thySaveText ? thySaveText : '确认'}}</button> <button thyButton=\"link-secondary\" (click)=\"cancelFn()\">取消</button> </div> </ng-container> <ng-container *ngIf=\"isTemplateRef\"> <template [ngTemplateOutlet]=\"footerTemplate\"></template> </ng-container> </div> "
+            template: "<div class=\"modal-footer\"> <ng-container *ngIf=\"!isTemplateRef\"> <div class=\"btn-pair\"> <button thyButton=\"primary\" (click)=\"saveFn()\" [thyLoading]=\"savingStatus\" [thyLoadingText]=\"savingText\">{{thySaveText ? thySaveText : '确认'}}</button> <button thyButton=\"link-secondary\" (click)=\"cancelFn()\">Cancel</button> </div> </ng-container> <ng-container *ngIf=\"isTemplateRef\"> <template [ngTemplateOutlet]=\"footerTemplate\"></template> </ng-container> </div> "
         }),
         __metadata("design:paramtypes", [ModalComponent])
     ], ModalFooterComponent);

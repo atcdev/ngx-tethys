@@ -13121,7 +13121,7 @@ var _uniqueIdCounter = 0;
  */
 var THY_OPTION_PARENT_COMPONENT = new core_["InjectionToken"]('THY_OPTION_PARENT_COMPONENT');
 var list_option_component_ThyListOptionComponent = /** @class */ (function () {
-    function ThyListOptionComponent(element, changeDetector, 
+    function ThyListOptionComponent(element, changeDetector,
     /** @docs-private */
     parentSelectionList) {
         this.element = element;
@@ -14450,7 +14450,7 @@ var ThyConfirmComponent = /** @class */ (function () {
     };
     ThyConfirmComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: "<thy-modal> <thy-modal-header thyTitle=\"{{title}}\"></thy-modal-header> <thy-modal-body class=\"thy-form\"> <div class=\"form-group\"> <p [innerHtml]=\"content\"></p> </div> <div class=\"form-group\"> <div class=\"btn-pair\"> <button thyButton=\"{{buttons.confirm.type}}\" (click)=\"confirm()\" [thyLoading]=\"loading\" [thyLoadingText]=\"buttons.confirm.loadingText\">{{buttons.confirm.text}}</button> <button thyButton=\"link-secondary\" (click)=\"closeModal()\">取消</button> </div> </div> </thy-modal-body> </thy-modal>"
+            template: "<thy-modal> <thy-modal-header thyTitle=\"{{title}}\"></thy-modal-header> <thy-modal-body class=\"thy-form\"> <div class=\"form-group\"> <p [innerHtml]=\"content\"></p> </div> <div class=\"form-group\"> <div class=\"btn-pair\"> <button thyButton=\"{{buttons.confirm.type}}\" (click)=\"confirm()\" [thyLoading]=\"loading\" [thyLoadingText]=\"buttons.confirm.loadingText\">{{buttons.confirm.text}}</button> <button thyButton=\"link-secondary\" (click)=\"closeModal()\">Cancel</button> </div> </div> </thy-modal-body> </thy-modal>"
         })
     ], ThyConfirmComponent);
     return ThyConfirmComponent;
@@ -18238,7 +18238,7 @@ function MAT_SELECT_SCROLL_STRATEGY_PROVIDER_FACTORY(overlay) {
     return overlay.scrollStrategies.reposition();
 }
 var ThyTreeSelectComponent = /** @class */ (function () {
-    function ThyTreeSelectComponent(elementRef, renderer, ngZone, overlay, 
+    function ThyTreeSelectComponent(elementRef, renderer, ngZone, overlay,
     // @Inject(MAT_SELECT_SCROLL_STRATEGY) scrollStrategy: any,
     scrollDispatcher) {
         this.elementRef = elementRef;
@@ -20416,7 +20416,7 @@ var ModalFooterComponent = /** @class */ (function () {
     ModalFooterComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'thy-modal-footer',
-            template: "<div class=\"modal-footer\"> <ng-container *ngIf=\"!isTemplateRef\"> <div class=\"btn-pair\"> <button thyButton=\"primary\" (click)=\"saveFn()\" [thyLoading]=\"savingStatus\" [thyLoadingText]=\"savingText\">{{thySaveText ? thySaveText : '确认'}}</button> <button thyButton=\"link-secondary\" (click)=\"cancelFn()\">取消</button> </div> </ng-container> <ng-container *ngIf=\"isTemplateRef\"> <template [ngTemplateOutlet]=\"footerTemplate\"></template> </ng-container> </div> "
+            template: "<div class=\"modal-footer\"> <ng-container *ngIf=\"!isTemplateRef\"> <div class=\"btn-pair\"> <button thyButton=\"primary\" (click)=\"saveFn()\" [thyLoading]=\"savingStatus\" [thyLoadingText]=\"savingText\">{{thySaveText ? thySaveText : '确认'}}</button> <button thyButton=\"link-secondary\" (click)=\"cancelFn()\">Cancel</button> </div> </ng-container> <ng-container *ngIf=\"isTemplateRef\"> <template [ngTemplateOutlet]=\"footerTemplate\"></template> </ng-container> </div> "
         })
     ], ModalFooterComponent);
     return ModalFooterComponent;
@@ -32350,7 +32350,7 @@ var THY_CONFIRM_DEFAULT_OPTIONS_PROVIDER = {
         title: '确认删除',
         okText: '确认',
         okType: 'danger',
-        cancelText: '取消'
+        cancelText: 'Cancel'
     }
 };
 
